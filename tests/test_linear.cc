@@ -1,0 +1,44 @@
+#include "../include/Linear.h"
+#include <gtest/gtest.h>
+
+TEST(LinearTest, ForwardShape) {
+  Matrix weights(3, 2);
+  weights(0, 0) = 1; weights(0, 1) = 2;
+  weights(1, 0) = 3; weights(1, 1) = 4;
+  weights(2, 0) = 5; weights(2, 1) = 6;
+
+  Matrix bias(3, 1);
+  bias(0, 0) = 1;
+  bias(1, 0) = 2;
+  bias(2, 0) = 3;
+
+  Linear lin(2, 3, weights, bias);
+
+  Matrix input(2, 1);
+  input(0, 0) = 2;
+  input(1, 0) = 3;
+
+  Matrix out = lin.forward(input);
+  EXPECT_EQ(out._rows, 3);
+  EXPECT_EQ(out._cols, 1);
+}
+
+TEST(LinearTest, ForwardValues) {
+  Matrix weights(2, 2);
+  weights(0, 0) = 1; weights(0, 1) = 2;
+  weights(1, 0) = 3; weights(1, 1) = 4;
+
+  Matrix bias(2, 1);
+  bias(0, 0) = 1;
+  bias(1, 0) = 2;
+
+  Linear lin(2, 2, weights, bias);
+
+  Matrix input(2, 1);
+  input(0, 0) = 2;
+  input(1, 0) = 3;
+
+  Matrix out = lin.forward(input);
+  EXPECT_FLOAT_EQ(out(0, 0), 1*2 + 2*3 + 1);
+  EXPECT_FLOAT_EQ(out(1, 0), 3*2 + 4*3 + 2);
+}

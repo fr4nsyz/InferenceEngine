@@ -1,0 +1,2 @@
+/usr/bin/ar qc libinference_engine.a CMakeFiles/inference_engine.dir/src/Matrix.cc.o CMakeFiles/inference_engine.dir/src/Linear.cc.o
+/usr/bin/ranlib libinference_engine.a

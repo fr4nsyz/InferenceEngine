@@ -1,0 +1,1 @@
+/usr/bin/c++ -Wl,--dependency-file=CMakeFiles/test_linear.dir/link.d CMakeFiles/test_linear.dir/test_linear.cc.o -o test_linear  ../libinference_engine.a ../lib/libgtest_main.a ../lib/libgtest.a

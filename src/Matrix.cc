@@ -1,11 +1,12 @@
 #include "../include/Matrix.h"
 #include <stdexcept>
 
-Matrix::Matrix(int rows, int columns) : _data(rows * columns, 0.0) {};
+Matrix::Matrix(int rows, int columns)
+    : _rows(rows), _cols(columns), _data(rows * columns, 0.0) {}
 
-float &Matrix::operator()(int r, int c) { return _data[r * c + c]; }
+float &Matrix::operator()(int r, int c) { return _data[r * _cols + c]; }
 
-float Matrix::operator()(int r, int c) const { return _data[r * c + c]; }
+float Matrix::operator()(int r, int c) const { return _data[r * _cols + c]; }
 
 Matrix Matrix::operator+(const Matrix &B) const {
   const Matrix &A = *this;

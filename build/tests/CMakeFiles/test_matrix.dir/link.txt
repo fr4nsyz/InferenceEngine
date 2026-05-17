@@ -1,0 +1,1 @@
+/usr/bin/c++ -Wl,--dependency-file=CMakeFiles/test_matrix.dir/link.d CMakeFiles/test_matrix.dir/test_matrix.cc.o -o test_matrix  ../libinference_engine.a ../lib/libgtest_main.a ../lib/libgtest.a
