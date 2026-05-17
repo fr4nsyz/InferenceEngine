@@ -2,7 +2,7 @@
 #include <stdexcept>
 
 Matrix::Matrix(int rows, int columns)
-    : _rows(rows), _cols(columns), _data(rows * columns, 0.0) {}
+    : _rows(rows), _cols(columns), _data(rows * columns, 0.0f) {}
 
 float &Matrix::operator()(int r, int c) { return _data[r * _cols + c]; }
 
