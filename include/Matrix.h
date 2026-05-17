@@ -1,3 +1,5 @@
+#ifndef INFERENCE_ENGINE_MATRIX_IMPLEMENTATION_H
+#define INFERENCE_ENGINE_MATRIX_IMPLEMENTATION_H
 #include <array>
 #include <tuple>
 #include <vector>
@@ -15,3 +17,4 @@ public:
   Matrix operator*(const Matrix &B) const;
   Matrix operator+(const Matrix &B) const;
 };
+#endif

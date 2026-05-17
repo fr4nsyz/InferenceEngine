@@ -3,6 +3,10 @@ file(REMOVE_RECURSE
   "CMakeFiles/inference_engine.dir/src/Linear.cc.o.d"
   "CMakeFiles/inference_engine.dir/src/Matrix.cc.o"
   "CMakeFiles/inference_engine.dir/src/Matrix.cc.o.d"
+  "CMakeFiles/inference_engine.dir/src/ReLU.cc.o"
+  "CMakeFiles/inference_engine.dir/src/ReLU.cc.o.d"
+  "CMakeFiles/inference_engine.dir/src/Softmax.cc.o"
+  "CMakeFiles/inference_engine.dir/src/Softmax.cc.o.d"
   "libinference_engine.a"
   "libinference_engine.pdb"
 )

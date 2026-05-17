@@ -10,6 +10,8 @@ set(CMAKE_DEPENDS_LANGUAGES
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
   "/home/fr4nsyz/vault/L_CACHES/InferenceEngine/src/Linear.cc" "CMakeFiles/inference_engine.dir/src/Linear.cc.o" "gcc" "CMakeFiles/inference_engine.dir/src/Linear.cc.o.d"
   "/home/fr4nsyz/vault/L_CACHES/InferenceEngine/src/Matrix.cc" "CMakeFiles/inference_engine.dir/src/Matrix.cc.o" "gcc" "CMakeFiles/inference_engine.dir/src/Matrix.cc.o.d"
+  "/home/fr4nsyz/vault/L_CACHES/InferenceEngine/src/ReLU.cc" "CMakeFiles/inference_engine.dir/src/ReLU.cc.o" "gcc" "CMakeFiles/inference_engine.dir/src/ReLU.cc.o.d"
+  "/home/fr4nsyz/vault/L_CACHES/InferenceEngine/src/Softmax.cc" "CMakeFiles/inference_engine.dir/src/Softmax.cc.o" "gcc" "CMakeFiles/inference_engine.dir/src/Softmax.cc.o.d"
   )
 
 # Targets to which this target links which contain Fortran sources.

@@ -8,6 +8,8 @@
 /home/fr4nsyz/vault/L_CACHES/InferenceEngine/build/CMakeFiles/install/strip.dir
 /home/fr4nsyz/vault/L_CACHES/InferenceEngine/build/tests/CMakeFiles/test_matrix.dir
 /home/fr4nsyz/vault/L_CACHES/InferenceEngine/build/tests/CMakeFiles/test_linear.dir
+/home/fr4nsyz/vault/L_CACHES/InferenceEngine/build/tests/CMakeFiles/test_softmax.dir
+/home/fr4nsyz/vault/L_CACHES/InferenceEngine/build/tests/CMakeFiles/test_relu.dir
 /home/fr4nsyz/vault/L_CACHES/InferenceEngine/build/tests/CMakeFiles/test.dir
 /home/fr4nsyz/vault/L_CACHES/InferenceEngine/build/tests/CMakeFiles/edit_cache.dir
 /home/fr4nsyz/vault/L_CACHES/InferenceEngine/build/tests/CMakeFiles/rebuild_cache.dir

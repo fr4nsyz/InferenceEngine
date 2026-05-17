@@ -199,6 +199,34 @@ test_linear/fast:
 	cd /home/fr4nsyz/vault/L_CACHES/InferenceEngine/build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/test_linear.dir/build.make tests/CMakeFiles/test_linear.dir/build
 .PHONY : test_linear/fast
 
+# Convenience name for target.
+tests/CMakeFiles/test_softmax.dir/rule:
+	cd /home/fr4nsyz/vault/L_CACHES/InferenceEngine/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 tests/CMakeFiles/test_softmax.dir/rule
+.PHONY : tests/CMakeFiles/test_softmax.dir/rule
+
+# Convenience name for target.
+test_softmax: tests/CMakeFiles/test_softmax.dir/rule
+.PHONY : test_softmax
+
+# fast build rule for target.
+test_softmax/fast:
+	cd /home/fr4nsyz/vault/L_CACHES/InferenceEngine/build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/test_softmax.dir/build.make tests/CMakeFiles/test_softmax.dir/build
+.PHONY : test_softmax/fast
+
+# Convenience name for target.
+tests/CMakeFiles/test_relu.dir/rule:
+	cd /home/fr4nsyz/vault/L_CACHES/InferenceEngine/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 tests/CMakeFiles/test_relu.dir/rule
+.PHONY : tests/CMakeFiles/test_relu.dir/rule
+
+# Convenience name for target.
+test_relu: tests/CMakeFiles/test_relu.dir/rule
+.PHONY : test_relu
+
+# fast build rule for target.
+test_relu/fast:
+	cd /home/fr4nsyz/vault/L_CACHES/InferenceEngine/build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/test_relu.dir/build.make tests/CMakeFiles/test_relu.dir/build
+.PHONY : test_relu/fast
+
 test_linear.o: test_linear.cc.o
 .PHONY : test_linear.o
 
@@ -247,6 +275,54 @@ test_matrix.cc.s:
 	cd /home/fr4nsyz/vault/L_CACHES/InferenceEngine/build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/test_matrix.dir/build.make tests/CMakeFiles/test_matrix.dir/test_matrix.cc.s
 .PHONY : test_matrix.cc.s
 
+test_relu.o: test_relu.cc.o
+.PHONY : test_relu.o
+
+# target to build an object file
+test_relu.cc.o:
+	cd /home/fr4nsyz/vault/L_CACHES/InferenceEngine/build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/test_relu.dir/build.make tests/CMakeFiles/test_relu.dir/test_relu.cc.o
+.PHONY : test_relu.cc.o
+
+test_relu.i: test_relu.cc.i
+.PHONY : test_relu.i
+
+# target to preprocess a source file
+test_relu.cc.i:
+	cd /home/fr4nsyz/vault/L_CACHES/InferenceEngine/build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/test_relu.dir/build.make tests/CMakeFiles/test_relu.dir/test_relu.cc.i
+.PHONY : test_relu.cc.i
+
+test_relu.s: test_relu.cc.s
+.PHONY : test_relu.s
+
+# target to generate assembly for a file
+test_relu.cc.s:
+	cd /home/fr4nsyz/vault/L_CACHES/InferenceEngine/build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/test_relu.dir/build.make tests/CMakeFiles/test_relu.dir/test_relu.cc.s
+.PHONY : test_relu.cc.s
+
+test_softmax.o: test_softmax.cc.o
+.PHONY : test_softmax.o
+
+# target to build an object file
+test_softmax.cc.o:
+	cd /home/fr4nsyz/vault/L_CACHES/InferenceEngine/build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/test_softmax.dir/build.make tests/CMakeFiles/test_softmax.dir/test_softmax.cc.o
+.PHONY : test_softmax.cc.o
+
+test_softmax.i: test_softmax.cc.i
+.PHONY : test_softmax.i
+
+# target to preprocess a source file
+test_softmax.cc.i:
+	cd /home/fr4nsyz/vault/L_CACHES/InferenceEngine/build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/test_softmax.dir/build.make tests/CMakeFiles/test_softmax.dir/test_softmax.cc.i
+.PHONY : test_softmax.cc.i
+
+test_softmax.s: test_softmax.cc.s
+.PHONY : test_softmax.s
+
+# target to generate assembly for a file
+test_softmax.cc.s:
+	cd /home/fr4nsyz/vault/L_CACHES/InferenceEngine/build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/test_softmax.dir/build.make tests/CMakeFiles/test_softmax.dir/test_softmax.cc.s
+.PHONY : test_softmax.cc.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -262,12 +338,20 @@ help:
 	@echo "... test"
 	@echo "... test_linear"
 	@echo "... test_matrix"
+	@echo "... test_relu"
+	@echo "... test_softmax"
 	@echo "... test_linear.o"
 	@echo "... test_linear.i"
 	@echo "... test_linear.s"
 	@echo "... test_matrix.o"
 	@echo "... test_matrix.i"
 	@echo "... test_matrix.s"
+	@echo "... test_relu.o"
+	@echo "... test_relu.i"
+	@echo "... test_relu.s"
+	@echo "... test_softmax.o"
+	@echo "... test_softmax.i"
+	@echo "... test_softmax.s"
 .PHONY : help
 
 

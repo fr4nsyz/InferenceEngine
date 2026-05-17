@@ -1,3 +1,5 @@
-test_matrix 2 0.00231593
-test_linear 2 0.00338281
+test_matrix 3 0.00135268
+test_linear 3 0.00169111
+test_softmax 1 0.00565316
+test_relu 1 0.00476353
 ---

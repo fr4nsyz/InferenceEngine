@@ -7,6 +7,8 @@ set(CMAKE_CXX_STANDARD_REQUIRED ON)
 add_library(inference_engine
   src/Matrix.cc
   src/Linear.cc
+  src/Softmax.cc
+  src/ReLU.cc
 )
 target_include_directories(inference_engine PUBLIC include)
 

@@ -211,6 +211,32 @@ test_linear/fast:
 .PHONY : test_linear/fast
 
 #=============================================================================
+# Target rules for targets named test_softmax
+
+# Build rule for target.
+test_softmax: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 test_softmax
+.PHONY : test_softmax
+
+# fast build rule for target.
+test_softmax/fast:
+	$(MAKE) $(MAKESILENT) -f tests/CMakeFiles/test_softmax.dir/build.make tests/CMakeFiles/test_softmax.dir/build
+.PHONY : test_softmax/fast
+
+#=============================================================================
+# Target rules for targets named test_relu
+
+# Build rule for target.
+test_relu: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 test_relu
+.PHONY : test_relu
+
+# fast build rule for target.
+test_relu/fast:
+	$(MAKE) $(MAKESILENT) -f tests/CMakeFiles/test_relu.dir/build.make tests/CMakeFiles/test_relu.dir/build
+.PHONY : test_relu/fast
+
+#=============================================================================
 # Target rules for targets named gmock
 
 # Build rule for target.
@@ -310,6 +336,54 @@ src/Matrix.cc.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/inference_engine.dir/build.make CMakeFiles/inference_engine.dir/src/Matrix.cc.s
 .PHONY : src/Matrix.cc.s
 
+src/ReLU.o: src/ReLU.cc.o
+.PHONY : src/ReLU.o
+
+# target to build an object file
+src/ReLU.cc.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/inference_engine.dir/build.make CMakeFiles/inference_engine.dir/src/ReLU.cc.o
+.PHONY : src/ReLU.cc.o
+
+src/ReLU.i: src/ReLU.cc.i
+.PHONY : src/ReLU.i
+
+# target to preprocess a source file
+src/ReLU.cc.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/inference_engine.dir/build.make CMakeFiles/inference_engine.dir/src/ReLU.cc.i
+.PHONY : src/ReLU.cc.i
+
+src/ReLU.s: src/ReLU.cc.s
+.PHONY : src/ReLU.s
+
+# target to generate assembly for a file
+src/ReLU.cc.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/inference_engine.dir/build.make CMakeFiles/inference_engine.dir/src/ReLU.cc.s
+.PHONY : src/ReLU.cc.s
+
+src/Softmax.o: src/Softmax.cc.o
+.PHONY : src/Softmax.o
+
+# target to build an object file
+src/Softmax.cc.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/inference_engine.dir/build.make CMakeFiles/inference_engine.dir/src/Softmax.cc.o
+.PHONY : src/Softmax.cc.o
+
+src/Softmax.i: src/Softmax.cc.i
+.PHONY : src/Softmax.i
+
+# target to preprocess a source file
+src/Softmax.cc.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/inference_engine.dir/build.make CMakeFiles/inference_engine.dir/src/Softmax.cc.i
+.PHONY : src/Softmax.cc.i
+
+src/Softmax.s: src/Softmax.cc.s
+.PHONY : src/Softmax.s
+
+# target to generate assembly for a file
+src/Softmax.cc.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/inference_engine.dir/build.make CMakeFiles/inference_engine.dir/src/Softmax.cc.s
+.PHONY : src/Softmax.cc.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -330,12 +404,20 @@ help:
 	@echo "... inference_engine"
 	@echo "... test_linear"
 	@echo "... test_matrix"
+	@echo "... test_relu"
+	@echo "... test_softmax"
 	@echo "... src/Linear.o"
 	@echo "... src/Linear.i"
 	@echo "... src/Linear.s"
 	@echo "... src/Matrix.o"
 	@echo "... src/Matrix.i"
 	@echo "... src/Matrix.s"
+	@echo "... src/ReLU.o"
+	@echo "... src/ReLU.i"
+	@echo "... src/ReLU.s"
+	@echo "... src/Softmax.o"
+	@echo "... src/Softmax.i"
+	@echo "... src/Softmax.s"
 .PHONY : help
 
 

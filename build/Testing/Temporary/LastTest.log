@@ -1,10 +1,10 @@
-Start testing: May 16 23:04 EDT
+Start testing: May 17 12:11 EDT
 ----------------------------------------------------------
-1/2 Testing: test_matrix
-1/2 Test: test_matrix
+1/4 Testing: test_matrix
+1/4 Test: test_matrix
 Command: "/home/fr4nsyz/vault/L_CACHES/InferenceEngine/build/tests/test_matrix"
 Directory: /home/fr4nsyz/vault/L_CACHES/InferenceEngine/build/tests
-"test_matrix" start time: May 16 23:04 EDT
+"test_matrix" start time: May 17 12:11 EDT
 Output:
 ----------------------------------------------------------
 Running main() from /home/fr4nsyz/vault/L_CACHES/InferenceEngine/build/_deps/googletest-src/googletest/src/gtest_main.cc
@@ -44,15 +44,15 @@ Running main() from /home/fr4nsyz/vault/L_CACHES/InferenceEngine/build/_deps/goo
 Test time =   0.00 sec
 ----------------------------------------------------------
 Test Passed.
-"test_matrix" end time: May 16 23:04 EDT
+"test_matrix" end time: May 17 12:11 EDT
 "test_matrix" time elapsed: 00:00:00
 ----------------------------------------------------------
 
-2/2 Testing: test_linear
-2/2 Test: test_linear
+2/4 Testing: test_linear
+2/4 Test: test_linear
 Command: "/home/fr4nsyz/vault/L_CACHES/InferenceEngine/build/tests/test_linear"
 Directory: /home/fr4nsyz/vault/L_CACHES/InferenceEngine/build/tests
-"test_linear" start time: May 16 23:04 EDT
+"test_linear" start time: May 17 12:11 EDT
 Output:
 ----------------------------------------------------------
 Running main() from /home/fr4nsyz/vault/L_CACHES/InferenceEngine/build/_deps/googletest-src/googletest/src/gtest_main.cc
@@ -72,8 +72,84 @@ Running main() from /home/fr4nsyz/vault/L_CACHES/InferenceEngine/build/_deps/goo
 Test time =   0.01 sec
 ----------------------------------------------------------
 Test Passed.
-"test_linear" end time: May 16 23:04 EDT
+"test_linear" end time: May 17 12:11 EDT
 "test_linear" time elapsed: 00:00:00
 ----------------------------------------------------------
 
-End testing: May 16 23:04 EDT
+3/4 Testing: test_softmax
+3/4 Test: test_softmax
+Command: "/home/fr4nsyz/vault/L_CACHES/InferenceEngine/build/tests/test_softmax"
+Directory: /home/fr4nsyz/vault/L_CACHES/InferenceEngine/build/tests
+"test_softmax" start time: May 17 12:11 EDT
+Output:
+----------------------------------------------------------
+Running main() from /home/fr4nsyz/vault/L_CACHES/InferenceEngine/build/_deps/googletest-src/googletest/src/gtest_main.cc
+[==========] Running 8 tests from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 8 tests from SoftmaxTest
+[ RUN      ] SoftmaxTest.OutputsSumToOne
+[       OK ] SoftmaxTest.OutputsSumToOne (0 ms)
+[ RUN      ] SoftmaxTest.OutputsInZeroOneRange
+[       OK ] SoftmaxTest.OutputsInZeroOneRange (0 ms)
+[ RUN      ] SoftmaxTest.LargerInputGetsHigherProbability
+[       OK ] SoftmaxTest.LargerInputGetsHigherProbability (0 ms)
+[ RUN      ] SoftmaxTest.UniformInputGivesUniformOutput
+[       OK ] SoftmaxTest.UniformInputGivesUniformOutput (0 ms)
+[ RUN      ] SoftmaxTest.SingleElement
+[       OK ] SoftmaxTest.SingleElement (0 ms)
+[ RUN      ] SoftmaxTest.MultiDimensionalInput
+[       OK ] SoftmaxTest.MultiDimensionalInput (0 ms)
+[ RUN      ] SoftmaxTest.NonSquareInput
+[       OK ] SoftmaxTest.NonSquareInput (0 ms)
+[ RUN      ] SoftmaxTest.OutputShapeMatchesInput
+[       OK ] SoftmaxTest.OutputShapeMatchesInput (0 ms)
+[----------] 8 tests from SoftmaxTest (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 8 tests from 1 test suite ran. (0 ms total)
+[  PASSED  ] 8 tests.
+<end of output>
+Test time =   0.01 sec
+----------------------------------------------------------
+Test Passed.
+"test_softmax" end time: May 17 12:11 EDT
+"test_softmax" time elapsed: 00:00:00
+----------------------------------------------------------
+
+4/4 Testing: test_relu
+4/4 Test: test_relu
+Command: "/home/fr4nsyz/vault/L_CACHES/InferenceEngine/build/tests/test_relu"
+Directory: /home/fr4nsyz/vault/L_CACHES/InferenceEngine/build/tests
+"test_relu" start time: May 17 12:11 EDT
+Output:
+----------------------------------------------------------
+Running main() from /home/fr4nsyz/vault/L_CACHES/InferenceEngine/build/_deps/googletest-src/googletest/src/gtest_main.cc
+[==========] Running 6 tests from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 6 tests from ReLUTest
+[ RUN      ] ReLUTest.PositiveValuesPassThrough
+[       OK ] ReLUTest.PositiveValuesPassThrough (0 ms)
+[ RUN      ] ReLUTest.NegativeBecomeZero
+[       OK ] ReLUTest.NegativeBecomeZero (0 ms)
+[ RUN      ] ReLUTest.ZeroStaysZero
+[       OK ] ReLUTest.ZeroStaysZero (0 ms)
+[ RUN      ] ReLUTest.MixedValues
+[       OK ] ReLUTest.MixedValues (0 ms)
+[ RUN      ] ReLUTest.NonSquareInput
+[       OK ] ReLUTest.NonSquareInput (0 ms)
+[ RUN      ] ReLUTest.OutputShapeMatchesInput
+[       OK ] ReLUTest.OutputShapeMatchesInput (0 ms)
+[----------] 6 tests from ReLUTest (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 6 tests from 1 test suite ran. (0 ms total)
+[  PASSED  ] 6 tests.
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"test_relu" end time: May 17 12:11 EDT
+"test_relu" time elapsed: 00:00:00
+----------------------------------------------------------
+
+End testing: May 17 12:11 EDT
