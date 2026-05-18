@@ -4,5 +4,5 @@
 class Softmax : public Ops {
 public:
   Softmax();
-  Matrix forward(const Matrix &input) const override;
+  Matrix forward(std::span<Matrix> inputs) const override;
 };

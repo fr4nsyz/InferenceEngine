@@ -12,5 +12,5 @@ class Linear : public Ops {
 public:
   Linear(int in_feats, int out_feats, const Matrix &weights,
          const Matrix &bias);
-  Matrix forward(const Matrix &input) const override;
+  Matrix forward(std::span<Matrix> inputs) const override;
 };

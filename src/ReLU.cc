@@ -3,7 +3,8 @@
 
 ReLU::ReLU() {}
 
-Matrix ReLU::forward(const Matrix &input) const {
+Matrix ReLU::forward(std::span<Matrix> inputs) const {
+  Matrix input = inputs[0];
 
   Matrix res = Matrix(input._rows, input._cols);
 

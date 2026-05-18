@@ -1,8 +1,8 @@
 #include "../include/Matrix.h"
 #include "../include/Ops.h"
 
-class ReLU : public Ops {
+class Add : public Ops {
 public:
-  ReLU();
+  Add();
   Matrix forward(std::span<Matrix> inputs) const override;
 };

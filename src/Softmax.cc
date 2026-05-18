@@ -3,7 +3,9 @@
 
 Softmax::Softmax() {}
 
-Matrix Softmax::forward(const Matrix &input) const {
+Matrix Softmax::forward(std::span<Matrix> inputs) const {
+  Matrix input = inputs[0];
+
   Matrix res = Matrix(input._rows, input._cols);
 
   float maxVal = input(0, 0);
