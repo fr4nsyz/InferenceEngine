@@ -9,6 +9,7 @@ add_library(inference_engine
   src/Linear.cc
   src/Softmax.cc
   src/ReLU.cc
+  src/Add.cc
 )
 target_include_directories(inference_engine PUBLIC include)
 
