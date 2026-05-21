@@ -1,8 +1,8 @@
-#include "../include/Matrix.h"
+#include "../include/Tensor.h"
 #include "../include/Ops.h"
 
 class ReLU : public Ops {
 public:
   ReLU();
-  Matrix forward(std::span<Matrix> inputs) const override;
+  Tensor forward(std::span<Tensor> inputs) const override;
 };

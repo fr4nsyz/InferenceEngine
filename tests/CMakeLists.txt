@@ -5,9 +5,9 @@ FetchContent_Declare(
 )
 FetchContent_MakeAvailable(googletest)
 
-add_executable(test_matrix test_matrix.cc)
-target_link_libraries(test_matrix PRIVATE inference_engine GTest::gtest_main)
-add_test(NAME test_matrix COMMAND test_matrix)
+add_executable(test_tensor test_tensor.cc)
+target_link_libraries(test_tensor PRIVATE inference_engine GTest::gtest_main)
+add_test(NAME test_tensor COMMAND test_tensor)
 
 add_executable(test_linear test_linear.cc)
 target_link_libraries(test_linear PRIVATE inference_engine GTest::gtest_main)

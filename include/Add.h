@@ -1,8 +1,8 @@
-#include "../include/Matrix.h"
+#include "../include/Tensor.h"
 #include "../include/Ops.h"
 
 class Add : public Ops {
 public:
   Add();
-  Matrix forward(std::span<Matrix> inputs) const override;
+  Tensor forward(std::span<Tensor> inputs) const override;
 };

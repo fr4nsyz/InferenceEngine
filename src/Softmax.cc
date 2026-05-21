@@ -1,39 +1,50 @@
 #include "../include/Softmax.h"
 #include <cmath>
+#include <stdexcept>
+#include <algorithm>
 
-Softmax::Softmax() {}
+Softmax::Softmax(int axis) : _axis(axis) {}
 
-Matrix Softmax::forward(std::span<Matrix> inputs) const {
-  Matrix input = inputs[0];
+Tensor Softmax::forward(std::span<Tensor> inputs) const {
+  Tensor input = inputs[0];
 
-  Matrix res = Matrix(input._rows, input._cols);
-
-  float maxVal = input(0, 0);
-
-  // find max
-  for (int i = 0; i < input._rows; ++i) {
-    for (int j = 0; j < input._cols; ++j) {
-      maxVal = std::max(maxVal, input(i, j));
-    }
+  int axis = _axis;
+  if (axis < 0) axis += input.ndim();
+  if (axis < 0 || axis >= input.ndim()) {
+    throw std::invalid_argument("Invalid axis for softmax");
   }
 
-  float denominator = [&] {
-    float sum = 0.0f;
+  Tensor result(input.shape());
+  const float* data = input.data();
+  float* res_data = result.data();
+  const auto& strides = input.strides();
+  const auto& shape = input.shape();
+  int axis_size = shape[axis];
+  int axis_stride = strides[axis];
+  int total = input.size();
 
-    for (int i = 0; i < input._rows; ++i) {
-      for (int j = 0; j < input._cols; ++j) {
-        sum += std::exp(input(i, j) - maxVal);
+  for (int chunk_start = 0; chunk_start < total;
+       chunk_start += axis_size * axis_stride) {
+    for (int offset = 0; offset < axis_stride; ++offset) {
+      int base = chunk_start + offset;
+
+      float max_val = data[base];
+      for (int k = 1; k < axis_size; ++k) {
+        max_val = std::max(max_val, data[base + k * axis_stride]);
+      }
+
+      float sum = 0.0f;
+      for (int k = 0; k < axis_size; ++k) {
+        int idx = base + k * axis_stride;
+        res_data[idx] = std::exp(data[idx] - max_val);
+        sum += res_data[idx];
+      }
+
+      for (int k = 0; k < axis_size; ++k) {
+        res_data[base + k * axis_stride] /= sum;
       }
     }
-
-    return sum;
-  }();
-
-  for (int i = 0; i < input._rows; ++i) {
-    for (int j = 0; j < input._cols; ++j) {
-      res(i, j) = std::exp(input(i, j) - maxVal) / denominator;
-    }
   }
 
-  return res;
-};
+  return result;
+}

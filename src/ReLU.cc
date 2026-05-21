@@ -3,16 +3,12 @@
 
 ReLU::ReLU() {}
 
-Matrix ReLU::forward(std::span<Matrix> inputs) const {
-  Matrix input = inputs[0];
+Tensor ReLU::forward(std::span<Tensor> inputs) const {
+  Tensor input = inputs[0];
+  Tensor res(input.shape());
 
-  Matrix res = Matrix(input._rows, input._cols);
-
-  for (int i = 0; i < input._rows; ++i) {
-
-    for (int j = 0; j < input._cols; ++j) {
-      res(i, j) = std::max(0.0f, input(i, j));
-    }
+  for (int i = 0; i < input.size(); ++i) {
+    res.data()[i] = std::max(0.0f, input.data()[i]);
   }
 
   return res;

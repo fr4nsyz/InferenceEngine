@@ -1,16 +1,14 @@
-#include "../include/Matrix.h"
+#include "../include/Tensor.h"
 #include "../include/Ops.h"
 
 class Linear : public Ops {
-  // Note the following are const because they are initialized with their proper
-  // values on model loading
-  const Matrix _weights;
-  const Matrix _bias; // Vector, but use Matrix class
+  const Tensor _weights;
+  const Tensor _bias;
   int _in_feats;
   int _out_feats;
 
 public:
-  Linear(int in_feats, int out_feats, const Matrix &weights,
-         const Matrix &bias);
-  Matrix forward(std::span<Matrix> inputs) const override;
+  Linear(int in_feats, int out_feats, const Tensor &weights,
+         const Tensor &bias);
+  Tensor forward(std::span<Tensor> inputs) const override;
 };

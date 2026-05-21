@@ -5,7 +5,7 @@ set(CMAKE_CXX_STANDARD 20)
 set(CMAKE_CXX_STANDARD_REQUIRED ON)
 
 add_library(inference_engine
-  src/Matrix.cc
+  src/Tensor.cc
   src/Linear.cc
   src/Softmax.cc
   src/ReLU.cc
