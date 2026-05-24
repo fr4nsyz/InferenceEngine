@@ -1,58 +1,94 @@
-Start testing: May 17 12:11 EDT
+Start testing: May 23 23:28 EDT
 ----------------------------------------------------------
-1/4 Testing: test_matrix
-1/4 Test: test_matrix
-Command: "/home/fr4nsyz/vault/L_CACHES/InferenceEngine/build/tests/test_matrix"
+1/6 Testing: test_tensor
+1/6 Test: test_tensor
+Command: "/home/fr4nsyz/vault/L_CACHES/InferenceEngine/build/tests/test_tensor"
 Directory: /home/fr4nsyz/vault/L_CACHES/InferenceEngine/build/tests
-"test_matrix" start time: May 17 12:11 EDT
+"test_tensor" start time: May 23 23:28 EDT
 Output:
 ----------------------------------------------------------
 Running main() from /home/fr4nsyz/vault/L_CACHES/InferenceEngine/build/_deps/googletest-src/googletest/src/gtest_main.cc
-[==========] Running 12 tests from 1 test suite.
+[==========] Running 30 tests from 1 test suite.
 [----------] Global test environment set-up.
-[----------] 12 tests from MatrixTest
-[ RUN      ] MatrixTest.Construction
-[       OK ] MatrixTest.Construction (0 ms)
-[ RUN      ] MatrixTest.ElementAccessReadWrite
-[       OK ] MatrixTest.ElementAccessReadWrite (0 ms)
-[ RUN      ] MatrixTest.Addition
-[       OK ] MatrixTest.Addition (0 ms)
-[ RUN      ] MatrixTest.AdditionDimensionMismatch
-[       OK ] MatrixTest.AdditionDimensionMismatch (0 ms)
-[ RUN      ] MatrixTest.Multiplication
-[       OK ] MatrixTest.Multiplication (0 ms)
-[ RUN      ] MatrixTest.MultiplicationNonSquare
-[       OK ] MatrixTest.MultiplicationNonSquare (0 ms)
-[ RUN      ] MatrixTest.MultiplicationDimensionMismatch
-[       OK ] MatrixTest.MultiplicationDimensionMismatch (0 ms)
-[ RUN      ] MatrixTest.NonSquareElementAccess
-[       OK ] MatrixTest.NonSquareElementAccess (0 ms)
-[ RUN      ] MatrixTest.AdditionNonSquare
-[       OK ] MatrixTest.AdditionNonSquare (0 ms)
-[ RUN      ] MatrixTest.IdentityMultiplication
-[       OK ] MatrixTest.IdentityMultiplication (0 ms)
-[ RUN      ] MatrixTest.OneByOne
-[       OK ] MatrixTest.OneByOne (0 ms)
-[ RUN      ] MatrixTest.ConstElementAccess
-[       OK ] MatrixTest.ConstElementAccess (0 ms)
-[----------] 12 tests from MatrixTest (0 ms total)
+[----------] 30 tests from TensorTest
+[ RUN      ] TensorTest.Construction2D
+[       OK ] TensorTest.Construction2D (0 ms)
+[ RUN      ] TensorTest.Construction1D
+[       OK ] TensorTest.Construction1D (0 ms)
+[ RUN      ] TensorTest.Construction3D
+[       OK ] TensorTest.Construction3D (0 ms)
+[ RUN      ] TensorTest.ConstructionEmptyShape
+[       OK ] TensorTest.ConstructionEmptyShape (0 ms)
+[ RUN      ] TensorTest.ConstructionInvalidDimension
+[       OK ] TensorTest.ConstructionInvalidDimension (0 ms)
+[ RUN      ] TensorTest.ElementAccessReadWrite
+[       OK ] TensorTest.ElementAccessReadWrite (0 ms)
+[ RUN      ] TensorTest.ElementAccess3D
+[       OK ] TensorTest.ElementAccess3D (0 ms)
+[ RUN      ] TensorTest.ElementAccessOutOfBounds
+[       OK ] TensorTest.ElementAccessOutOfBounds (0 ms)
+[ RUN      ] TensorTest.WrongNumberOfIndices
+[       OK ] TensorTest.WrongNumberOfIndices (0 ms)
+[ RUN      ] TensorTest.Addition
+[       OK ] TensorTest.Addition (0 ms)
+[ RUN      ] TensorTest.Addition3D
+[       OK ] TensorTest.Addition3D (0 ms)
+[ RUN      ] TensorTest.AdditionBroadcast1DTo2D
+[       OK ] TensorTest.AdditionBroadcast1DTo2D (0 ms)
+[ RUN      ] TensorTest.AdditionBroadcastWithScalarDim
+[       OK ] TensorTest.AdditionBroadcastWithScalarDim (0 ms)
+[ RUN      ] TensorTest.AdditionDimensionMismatch
+[       OK ] TensorTest.AdditionDimensionMismatch (0 ms)
+[ RUN      ] TensorTest.Multiplication
+[       OK ] TensorTest.Multiplication (0 ms)
+[ RUN      ] TensorTest.MultiplicationNonSquare
+[       OK ] TensorTest.MultiplicationNonSquare (0 ms)
+[ RUN      ] TensorTest.MultiplicationDimensionMismatch
+[       OK ] TensorTest.MultiplicationDimensionMismatch (0 ms)
+[ RUN      ] TensorTest.MultiplicationNon2D
+[       OK ] TensorTest.MultiplicationNon2D (0 ms)
+[ RUN      ] TensorTest.NonSquareElementAccess
+[       OK ] TensorTest.NonSquareElementAccess (0 ms)
+[ RUN      ] TensorTest.AdditionNonSquare
+[       OK ] TensorTest.AdditionNonSquare (0 ms)
+[ RUN      ] TensorTest.IdentityMultiplication
+[       OK ] TensorTest.IdentityMultiplication (0 ms)
+[ RUN      ] TensorTest.OneByOne
+[       OK ] TensorTest.OneByOne (0 ms)
+[ RUN      ] TensorTest.ConstElementAccess
+[       OK ] TensorTest.ConstElementAccess (0 ms)
+[ RUN      ] TensorTest.Reshape
+[       OK ] TensorTest.Reshape (0 ms)
+[ RUN      ] TensorTest.ReshapeTo3D
+[       OK ] TensorTest.ReshapeTo3D (0 ms)
+[ RUN      ] TensorTest.ReshapeMismatch
+[       OK ] TensorTest.ReshapeMismatch (0 ms)
+[ RUN      ] TensorTest.Transpose
+[       OK ] TensorTest.Transpose (0 ms)
+[ RUN      ] TensorTest.TransposeNon2D
+[       OK ] TensorTest.TransposeNon2D (0 ms)
+[ RUN      ] TensorTest.StridesAccessor
+[       OK ] TensorTest.StridesAccessor (0 ms)
+[ RUN      ] TensorTest.DataPointer
+[       OK ] TensorTest.DataPointer (0 ms)
+[----------] 30 tests from TensorTest (0 ms total)
 
 [----------] Global test environment tear-down
-[==========] 12 tests from 1 test suite ran. (0 ms total)
-[  PASSED  ] 12 tests.
+[==========] 30 tests from 1 test suite ran. (0 ms total)
+[  PASSED  ] 30 tests.
 <end of output>
-Test time =   0.00 sec
+Test time =   0.01 sec
 ----------------------------------------------------------
 Test Passed.
-"test_matrix" end time: May 17 12:11 EDT
-"test_matrix" time elapsed: 00:00:00
+"test_tensor" end time: May 23 23:28 EDT
+"test_tensor" time elapsed: 00:00:00
 ----------------------------------------------------------
 
-2/4 Testing: test_linear
-2/4 Test: test_linear
+2/6 Testing: test_linear
+2/6 Test: test_linear
 Command: "/home/fr4nsyz/vault/L_CACHES/InferenceEngine/build/tests/test_linear"
 Directory: /home/fr4nsyz/vault/L_CACHES/InferenceEngine/build/tests
-"test_linear" start time: May 17 12:11 EDT
+"test_linear" start time: May 23 23:28 EDT
 Output:
 ----------------------------------------------------------
 Running main() from /home/fr4nsyz/vault/L_CACHES/InferenceEngine/build/_deps/googletest-src/googletest/src/gtest_main.cc
@@ -72,21 +108,21 @@ Running main() from /home/fr4nsyz/vault/L_CACHES/InferenceEngine/build/_deps/goo
 Test time =   0.01 sec
 ----------------------------------------------------------
 Test Passed.
-"test_linear" end time: May 17 12:11 EDT
+"test_linear" end time: May 23 23:28 EDT
 "test_linear" time elapsed: 00:00:00
 ----------------------------------------------------------
 
-3/4 Testing: test_softmax
-3/4 Test: test_softmax
+3/6 Testing: test_softmax
+3/6 Test: test_softmax
 Command: "/home/fr4nsyz/vault/L_CACHES/InferenceEngine/build/tests/test_softmax"
 Directory: /home/fr4nsyz/vault/L_CACHES/InferenceEngine/build/tests
-"test_softmax" start time: May 17 12:11 EDT
+"test_softmax" start time: May 23 23:28 EDT
 Output:
 ----------------------------------------------------------
 Running main() from /home/fr4nsyz/vault/L_CACHES/InferenceEngine/build/_deps/googletest-src/googletest/src/gtest_main.cc
-[==========] Running 8 tests from 1 test suite.
+[==========] Running 11 tests from 1 test suite.
 [----------] Global test environment set-up.
-[----------] 8 tests from SoftmaxTest
+[----------] 11 tests from SoftmaxTest
 [ RUN      ] SoftmaxTest.OutputsSumToOne
 [       OK ] SoftmaxTest.OutputsSumToOne (0 ms)
 [ RUN      ] SoftmaxTest.OutputsInZeroOneRange
@@ -103,30 +139,36 @@ Running main() from /home/fr4nsyz/vault/L_CACHES/InferenceEngine/build/_deps/goo
 [       OK ] SoftmaxTest.NonSquareInput (0 ms)
 [ RUN      ] SoftmaxTest.OutputShapeMatchesInput
 [       OK ] SoftmaxTest.OutputShapeMatchesInput (0 ms)
-[----------] 8 tests from SoftmaxTest (0 ms total)
+[ RUN      ] SoftmaxTest.SoftmaxAlongAxis0
+[       OK ] SoftmaxTest.SoftmaxAlongAxis0 (0 ms)
+[ RUN      ] SoftmaxTest.InvalidAxis
+[       OK ] SoftmaxTest.InvalidAxis (0 ms)
+[ RUN      ] SoftmaxTest.SoftmaxOn3DInput
+[       OK ] SoftmaxTest.SoftmaxOn3DInput (0 ms)
+[----------] 11 tests from SoftmaxTest (0 ms total)
 
 [----------] Global test environment tear-down
-[==========] 8 tests from 1 test suite ran. (0 ms total)
-[  PASSED  ] 8 tests.
+[==========] 11 tests from 1 test suite ran. (0 ms total)
+[  PASSED  ] 11 tests.
 <end of output>
 Test time =   0.01 sec
 ----------------------------------------------------------
 Test Passed.
-"test_softmax" end time: May 17 12:11 EDT
+"test_softmax" end time: May 23 23:28 EDT
 "test_softmax" time elapsed: 00:00:00
 ----------------------------------------------------------
 
-4/4 Testing: test_relu
-4/4 Test: test_relu
+4/6 Testing: test_relu
+4/6 Test: test_relu
 Command: "/home/fr4nsyz/vault/L_CACHES/InferenceEngine/build/tests/test_relu"
 Directory: /home/fr4nsyz/vault/L_CACHES/InferenceEngine/build/tests
-"test_relu" start time: May 17 12:11 EDT
+"test_relu" start time: May 23 23:28 EDT
 Output:
 ----------------------------------------------------------
 Running main() from /home/fr4nsyz/vault/L_CACHES/InferenceEngine/build/_deps/googletest-src/googletest/src/gtest_main.cc
-[==========] Running 6 tests from 1 test suite.
+[==========] Running 7 tests from 1 test suite.
 [----------] Global test environment set-up.
-[----------] 6 tests from ReLUTest
+[----------] 7 tests from ReLUTest
 [ RUN      ] ReLUTest.PositiveValuesPassThrough
 [       OK ] ReLUTest.PositiveValuesPassThrough (0 ms)
 [ RUN      ] ReLUTest.NegativeBecomeZero
@@ -139,17 +181,89 @@ Running main() from /home/fr4nsyz/vault/L_CACHES/InferenceEngine/build/_deps/goo
 [       OK ] ReLUTest.NonSquareInput (0 ms)
 [ RUN      ] ReLUTest.OutputShapeMatchesInput
 [       OK ] ReLUTest.OutputShapeMatchesInput (0 ms)
-[----------] 6 tests from ReLUTest (0 ms total)
+[ RUN      ] ReLUTest.OutputShapeMatches3D
+[       OK ] ReLUTest.OutputShapeMatches3D (0 ms)
+[----------] 7 tests from ReLUTest (0 ms total)
 
 [----------] Global test environment tear-down
-[==========] 6 tests from 1 test suite ran. (0 ms total)
-[  PASSED  ] 6 tests.
+[==========] 7 tests from 1 test suite ran. (0 ms total)
+[  PASSED  ] 7 tests.
 <end of output>
-Test time =   0.00 sec
+Test time =   0.01 sec
 ----------------------------------------------------------
 Test Passed.
-"test_relu" end time: May 17 12:11 EDT
+"test_relu" end time: May 23 23:28 EDT
 "test_relu" time elapsed: 00:00:00
 ----------------------------------------------------------
 
-End testing: May 17 12:11 EDT
+5/6 Testing: test_add
+5/6 Test: test_add
+Command: "/home/fr4nsyz/vault/L_CACHES/InferenceEngine/build/tests/test_add"
+Directory: /home/fr4nsyz/vault/L_CACHES/InferenceEngine/build/tests
+"test_add" start time: May 23 23:28 EDT
+Output:
+----------------------------------------------------------
+Running main() from /home/fr4nsyz/vault/L_CACHES/InferenceEngine/build/_deps/googletest-src/googletest/src/gtest_main.cc
+[==========] Running 7 tests from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 7 tests from AddTest
+[ RUN      ] AddTest.TwoMatrices
+[       OK ] AddTest.TwoMatrices (0 ms)
+[ RUN      ] AddTest.ThreeMatrices
+[       OK ] AddTest.ThreeMatrices (0 ms)
+[ RUN      ] AddTest.SingleMatrix
+[       OK ] AddTest.SingleMatrix (0 ms)
+[ RUN      ] AddTest.NonSquareMatrices
+[       OK ] AddTest.NonSquareMatrices (0 ms)
+[ RUN      ] AddTest.OutputShape
+[       OK ] AddTest.OutputShape (0 ms)
+[ RUN      ] AddTest.EmptyInput
+[       OK ] AddTest.EmptyInput (0 ms)
+[ RUN      ] AddTest.ShapeMismatch
+[       OK ] AddTest.ShapeMismatch (0 ms)
+[----------] 7 tests from AddTest (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 7 tests from 1 test suite ran. (0 ms total)
+[  PASSED  ] 7 tests.
+<end of output>
+Test time =   0.01 sec
+----------------------------------------------------------
+Test Passed.
+"test_add" end time: May 23 23:28 EDT
+"test_add" time elapsed: 00:00:00
+----------------------------------------------------------
+
+6/6 Testing: test_onnx_loader
+6/6 Test: test_onnx_loader
+Command: "/home/fr4nsyz/vault/L_CACHES/InferenceEngine/build/tests/test_onnx_loader"
+Directory: /home/fr4nsyz/vault/L_CACHES/InferenceEngine
+"test_onnx_loader" start time: May 23 23:28 EDT
+Output:
+----------------------------------------------------------
+Running main() from /home/fr4nsyz/vault/L_CACHES/InferenceEngine/build/_deps/googletest-src/googletest/src/gtest_main.cc
+[==========] Running 4 tests from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 4 tests from DemoTest
+[ RUN      ] DemoTest.LinearReLU
+[       OK ] DemoTest.LinearReLU (0 ms)
+[ RUN      ] DemoTest.LinearReLUSoftmax
+[       OK ] DemoTest.LinearReLUSoftmax (0 ms)
+[ RUN      ] DemoTest.DeepMLP
+[       OK ] DemoTest.DeepMLP (0 ms)
+[ RUN      ] DemoTest.SimpleRelu
+[       OK ] DemoTest.SimpleRelu (0 ms)
+[----------] 4 tests from DemoTest (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 4 tests from 1 test suite ran. (0 ms total)
+[  PASSED  ] 4 tests.
+<end of output>
+Test time =   0.01 sec
+----------------------------------------------------------
+Test Passed.
+"test_onnx_loader" end time: May 23 23:28 EDT
+"test_onnx_loader" time elapsed: 00:00:00
+----------------------------------------------------------
+
+End testing: May 23 23:28 EDT

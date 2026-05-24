@@ -1,2 +1,2 @@
-/usr/bin/ar qc libinference_engine.a CMakeFiles/inference_engine.dir/src/Matrix.cc.o CMakeFiles/inference_engine.dir/src/Linear.cc.o CMakeFiles/inference_engine.dir/src/Softmax.cc.o CMakeFiles/inference_engine.dir/src/ReLU.cc.o
+/usr/bin/ar qc libinference_engine.a CMakeFiles/inference_engine.dir/src/Tensor.cc.o CMakeFiles/inference_engine.dir/src/Ops.cc.o CMakeFiles/inference_engine.dir/src/Linear.cc.o CMakeFiles/inference_engine.dir/src/Softmax.cc.o CMakeFiles/inference_engine.dir/src/ReLU.cc.o CMakeFiles/inference_engine.dir/src/Add.cc.o CMakeFiles/inference_engine.dir/src/ONNXLoader.cc.o CMakeFiles/inference_engine.dir/src/Model.cc.o CMakeFiles/inference_engine.dir/onnx.pb.cc.o
 /usr/bin/ranlib libinference_engine.a

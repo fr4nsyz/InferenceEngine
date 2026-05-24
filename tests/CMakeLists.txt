@@ -24,3 +24,8 @@ add_test(NAME test_relu COMMAND test_relu)
 add_executable(test_add test_add.cc)
 target_link_libraries(test_add PRIVATE inference_engine GTest::gtest_main)
 add_test(NAME test_add COMMAND test_add)
+
+add_executable(test_onnx_loader test_onnx_loader.cc)
+target_link_libraries(test_onnx_loader PRIVATE inference_engine GTest::gtest_main)
+add_test(NAME test_onnx_loader COMMAND test_onnx_loader)
+set_tests_properties(test_onnx_loader PROPERTIES WORKING_DIRECTORY ${CMAKE_SOURCE_DIR})

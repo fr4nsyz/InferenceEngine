@@ -24,8 +24,9 @@ tests/CMakeFiles/test_linear.dir/test_linear.cc.o
  /home/fr4nsyz/vault/L_CACHES/InferenceEngine/build/_deps/googletest-src/googletest/include/gtest/internal/gtest-port.h
  /home/fr4nsyz/vault/L_CACHES/InferenceEngine/build/_deps/googletest-src/googletest/include/gtest/internal/gtest-string.h
  /home/fr4nsyz/vault/L_CACHES/InferenceEngine/build/_deps/googletest-src/googletest/include/gtest/internal/gtest-type-util.h
- /home/fr4nsyz/vault/L_CACHES/InferenceEngine/include/Matrix.h
  /home/fr4nsyz/vault/L_CACHES/InferenceEngine/include/Linear.h
+ /home/fr4nsyz/vault/L_CACHES/InferenceEngine/include/Ops.h
+ /home/fr4nsyz/vault/L_CACHES/InferenceEngine/include/Tensor.h
  /usr/include/alloca.h
  /usr/include/asm-generic/bitsperlong.h
  /usr/include/asm-generic/errno-base.h
@@ -86,7 +87,9 @@ tests/CMakeFiles/test_linear.dir/test_linear.cc.o
  /usr/include/bits/stdint-intn.h
  /usr/include/bits/stdint-least.h
  /usr/include/bits/stdint-uintn.h
+ /usr/include/bits/stdio.h
  /usr/include/bits/stdio_lim.h
+ /usr/include/bits/stdlib-bsearch.h
  /usr/include/bits/stdlib-float.h
  /usr/include/bits/struct_mutex.h
  /usr/include/bits/struct_rwlock.h
@@ -384,6 +387,87 @@ tests/CMakeFiles/test_linear.dir/test_linear.cc.o
  /usr/lib/gcc/x86_64-redhat-linux/15/include/syslimits.h
 
 tests/test_linear
+ /home/fr4nsyz/vault/L_CACHES/InferenceEngine/build/_deps/abseil-cpp-build/absl/base/libabsl_base.a
+ /home/fr4nsyz/vault/L_CACHES/InferenceEngine/build/_deps/abseil-cpp-build/absl/base/libabsl_log_severity.a
+ /home/fr4nsyz/vault/L_CACHES/InferenceEngine/build/_deps/abseil-cpp-build/absl/base/libabsl_malloc_internal.a
+ /home/fr4nsyz/vault/L_CACHES/InferenceEngine/build/_deps/abseil-cpp-build/absl/base/libabsl_raw_logging_internal.a
+ /home/fr4nsyz/vault/L_CACHES/InferenceEngine/build/_deps/abseil-cpp-build/absl/base/libabsl_spinlock_wait.a
+ /home/fr4nsyz/vault/L_CACHES/InferenceEngine/build/_deps/abseil-cpp-build/absl/base/libabsl_strerror.a
+ /home/fr4nsyz/vault/L_CACHES/InferenceEngine/build/_deps/abseil-cpp-build/absl/base/libabsl_throw_delegate.a
+ /home/fr4nsyz/vault/L_CACHES/InferenceEngine/build/_deps/abseil-cpp-build/absl/container/libabsl_hashtablez_sampler.a
+ /home/fr4nsyz/vault/L_CACHES/InferenceEngine/build/_deps/abseil-cpp-build/absl/container/libabsl_raw_hash_set.a
+ /home/fr4nsyz/vault/L_CACHES/InferenceEngine/build/_deps/abseil-cpp-build/absl/crc/libabsl_crc32c.a
+ /home/fr4nsyz/vault/L_CACHES/InferenceEngine/build/_deps/abseil-cpp-build/absl/crc/libabsl_crc_cord_state.a
+ /home/fr4nsyz/vault/L_CACHES/InferenceEngine/build/_deps/abseil-cpp-build/absl/crc/libabsl_crc_cpu_detect.a
+ /home/fr4nsyz/vault/L_CACHES/InferenceEngine/build/_deps/abseil-cpp-build/absl/crc/libabsl_crc_internal.a
+ /home/fr4nsyz/vault/L_CACHES/InferenceEngine/build/_deps/abseil-cpp-build/absl/debugging/libabsl_debugging_internal.a
+ /home/fr4nsyz/vault/L_CACHES/InferenceEngine/build/_deps/abseil-cpp-build/absl/debugging/libabsl_decode_rust_punycode.a
+ /home/fr4nsyz/vault/L_CACHES/InferenceEngine/build/_deps/abseil-cpp-build/absl/debugging/libabsl_demangle_internal.a
+ /home/fr4nsyz/vault/L_CACHES/InferenceEngine/build/_deps/abseil-cpp-build/absl/debugging/libabsl_demangle_rust.a
+ /home/fr4nsyz/vault/L_CACHES/InferenceEngine/build/_deps/abseil-cpp-build/absl/debugging/libabsl_examine_stack.a
+ /home/fr4nsyz/vault/L_CACHES/InferenceEngine/build/_deps/abseil-cpp-build/absl/debugging/libabsl_leak_check.a
+ /home/fr4nsyz/vault/L_CACHES/InferenceEngine/build/_deps/abseil-cpp-build/absl/debugging/libabsl_stacktrace.a
+ /home/fr4nsyz/vault/L_CACHES/InferenceEngine/build/_deps/abseil-cpp-build/absl/debugging/libabsl_symbolize.a
+ /home/fr4nsyz/vault/L_CACHES/InferenceEngine/build/_deps/abseil-cpp-build/absl/debugging/libabsl_utf8_for_code_point.a
+ /home/fr4nsyz/vault/L_CACHES/InferenceEngine/build/_deps/abseil-cpp-build/absl/flags/libabsl_flags_commandlineflag.a
+ /home/fr4nsyz/vault/L_CACHES/InferenceEngine/build/_deps/abseil-cpp-build/absl/flags/libabsl_flags_commandlineflag_internal.a
+ /home/fr4nsyz/vault/L_CACHES/InferenceEngine/build/_deps/abseil-cpp-build/absl/flags/libabsl_flags_config.a
+ /home/fr4nsyz/vault/L_CACHES/InferenceEngine/build/_deps/abseil-cpp-build/absl/flags/libabsl_flags_internal.a
+ /home/fr4nsyz/vault/L_CACHES/InferenceEngine/build/_deps/abseil-cpp-build/absl/flags/libabsl_flags_marshalling.a
+ /home/fr4nsyz/vault/L_CACHES/InferenceEngine/build/_deps/abseil-cpp-build/absl/flags/libabsl_flags_private_handle_accessor.a
+ /home/fr4nsyz/vault/L_CACHES/InferenceEngine/build/_deps/abseil-cpp-build/absl/flags/libabsl_flags_program_name.a
+ /home/fr4nsyz/vault/L_CACHES/InferenceEngine/build/_deps/abseil-cpp-build/absl/flags/libabsl_flags_reflection.a
+ /home/fr4nsyz/vault/L_CACHES/InferenceEngine/build/_deps/abseil-cpp-build/absl/hash/libabsl_city.a
+ /home/fr4nsyz/vault/L_CACHES/InferenceEngine/build/_deps/abseil-cpp-build/absl/hash/libabsl_hash.a
+ /home/fr4nsyz/vault/L_CACHES/InferenceEngine/build/_deps/abseil-cpp-build/absl/hash/libabsl_low_level_hash.a
+ /home/fr4nsyz/vault/L_CACHES/InferenceEngine/build/_deps/abseil-cpp-build/absl/log/libabsl_die_if_null.a
+ /home/fr4nsyz/vault/L_CACHES/InferenceEngine/build/_deps/abseil-cpp-build/absl/log/libabsl_log_entry.a
+ /home/fr4nsyz/vault/L_CACHES/InferenceEngine/build/_deps/abseil-cpp-build/absl/log/libabsl_log_globals.a
+ /home/fr4nsyz/vault/L_CACHES/InferenceEngine/build/_deps/abseil-cpp-build/absl/log/libabsl_log_initialize.a
+ /home/fr4nsyz/vault/L_CACHES/InferenceEngine/build/_deps/abseil-cpp-build/absl/log/libabsl_log_internal_check_op.a
+ /home/fr4nsyz/vault/L_CACHES/InferenceEngine/build/_deps/abseil-cpp-build/absl/log/libabsl_log_internal_conditions.a
+ /home/fr4nsyz/vault/L_CACHES/InferenceEngine/build/_deps/abseil-cpp-build/absl/log/libabsl_log_internal_fnmatch.a
+ /home/fr4nsyz/vault/L_CACHES/InferenceEngine/build/_deps/abseil-cpp-build/absl/log/libabsl_log_internal_format.a
+ /home/fr4nsyz/vault/L_CACHES/InferenceEngine/build/_deps/abseil-cpp-build/absl/log/libabsl_log_internal_globals.a
+ /home/fr4nsyz/vault/L_CACHES/InferenceEngine/build/_deps/abseil-cpp-build/absl/log/libabsl_log_internal_log_sink_set.a
+ /home/fr4nsyz/vault/L_CACHES/InferenceEngine/build/_deps/abseil-cpp-build/absl/log/libabsl_log_internal_message.a
+ /home/fr4nsyz/vault/L_CACHES/InferenceEngine/build/_deps/abseil-cpp-build/absl/log/libabsl_log_internal_nullguard.a
+ /home/fr4nsyz/vault/L_CACHES/InferenceEngine/build/_deps/abseil-cpp-build/absl/log/libabsl_log_internal_proto.a
+ /home/fr4nsyz/vault/L_CACHES/InferenceEngine/build/_deps/abseil-cpp-build/absl/log/libabsl_log_sink.a
+ /home/fr4nsyz/vault/L_CACHES/InferenceEngine/build/_deps/abseil-cpp-build/absl/log/libabsl_vlog_config_internal.a
+ /home/fr4nsyz/vault/L_CACHES/InferenceEngine/build/_deps/abseil-cpp-build/absl/numeric/libabsl_int128.a
+ /home/fr4nsyz/vault/L_CACHES/InferenceEngine/build/_deps/abseil-cpp-build/absl/profiling/libabsl_exponential_biased.a
+ /home/fr4nsyz/vault/L_CACHES/InferenceEngine/build/_deps/abseil-cpp-build/absl/random/libabsl_random_distributions.a
+ /home/fr4nsyz/vault/L_CACHES/InferenceEngine/build/_deps/abseil-cpp-build/absl/random/libabsl_random_internal_platform.a
+ /home/fr4nsyz/vault/L_CACHES/InferenceEngine/build/_deps/abseil-cpp-build/absl/random/libabsl_random_internal_pool_urbg.a
+ /home/fr4nsyz/vault/L_CACHES/InferenceEngine/build/_deps/abseil-cpp-build/absl/random/libabsl_random_internal_randen.a
+ /home/fr4nsyz/vault/L_CACHES/InferenceEngine/build/_deps/abseil-cpp-build/absl/random/libabsl_random_internal_randen_hwaes.a
+ /home/fr4nsyz/vault/L_CACHES/InferenceEngine/build/_deps/abseil-cpp-build/absl/random/libabsl_random_internal_randen_hwaes_impl.a
+ /home/fr4nsyz/vault/L_CACHES/InferenceEngine/build/_deps/abseil-cpp-build/absl/random/libabsl_random_internal_randen_slow.a
+ /home/fr4nsyz/vault/L_CACHES/InferenceEngine/build/_deps/abseil-cpp-build/absl/random/libabsl_random_internal_seed_material.a
+ /home/fr4nsyz/vault/L_CACHES/InferenceEngine/build/_deps/abseil-cpp-build/absl/random/libabsl_random_seed_gen_exception.a
+ /home/fr4nsyz/vault/L_CACHES/InferenceEngine/build/_deps/abseil-cpp-build/absl/random/libabsl_random_seed_sequences.a
+ /home/fr4nsyz/vault/L_CACHES/InferenceEngine/build/_deps/abseil-cpp-build/absl/status/libabsl_status.a
+ /home/fr4nsyz/vault/L_CACHES/InferenceEngine/build/_deps/abseil-cpp-build/absl/status/libabsl_statusor.a
+ /home/fr4nsyz/vault/L_CACHES/InferenceEngine/build/_deps/abseil-cpp-build/absl/strings/libabsl_cord.a
+ /home/fr4nsyz/vault/L_CACHES/InferenceEngine/build/_deps/abseil-cpp-build/absl/strings/libabsl_cord_internal.a
+ /home/fr4nsyz/vault/L_CACHES/InferenceEngine/build/_deps/abseil-cpp-build/absl/strings/libabsl_cordz_functions.a
+ /home/fr4nsyz/vault/L_CACHES/InferenceEngine/build/_deps/abseil-cpp-build/absl/strings/libabsl_cordz_handle.a
+ /home/fr4nsyz/vault/L_CACHES/InferenceEngine/build/_deps/abseil-cpp-build/absl/strings/libabsl_cordz_info.a
+ /home/fr4nsyz/vault/L_CACHES/InferenceEngine/build/_deps/abseil-cpp-build/absl/strings/libabsl_str_format_internal.a
+ /home/fr4nsyz/vault/L_CACHES/InferenceEngine/build/_deps/abseil-cpp-build/absl/strings/libabsl_string_view.a
+ /home/fr4nsyz/vault/L_CACHES/InferenceEngine/build/_deps/abseil-cpp-build/absl/strings/libabsl_strings.a
+ /home/fr4nsyz/vault/L_CACHES/InferenceEngine/build/_deps/abseil-cpp-build/absl/strings/libabsl_strings_internal.a
+ /home/fr4nsyz/vault/L_CACHES/InferenceEngine/build/_deps/abseil-cpp-build/absl/synchronization/libabsl_graphcycles_internal.a
+ /home/fr4nsyz/vault/L_CACHES/InferenceEngine/build/_deps/abseil-cpp-build/absl/synchronization/libabsl_kernel_timeout_internal.a
+ /home/fr4nsyz/vault/L_CACHES/InferenceEngine/build/_deps/abseil-cpp-build/absl/synchronization/libabsl_synchronization.a
+ /home/fr4nsyz/vault/L_CACHES/InferenceEngine/build/_deps/abseil-cpp-build/absl/time/libabsl_civil_time.a
+ /home/fr4nsyz/vault/L_CACHES/InferenceEngine/build/_deps/abseil-cpp-build/absl/time/libabsl_time.a
+ /home/fr4nsyz/vault/L_CACHES/InferenceEngine/build/_deps/abseil-cpp-build/absl/time/libabsl_time_zone.a
+ /home/fr4nsyz/vault/L_CACHES/InferenceEngine/build/_deps/abseil-cpp-build/absl/types/libabsl_bad_optional_access.a
+ /home/fr4nsyz/vault/L_CACHES/InferenceEngine/build/_deps/abseil-cpp-build/absl/types/libabsl_bad_variant_access.a
+ /home/fr4nsyz/vault/L_CACHES/InferenceEngine/build/_deps/protobuf-build/libprotobuf.a
+ /home/fr4nsyz/vault/L_CACHES/InferenceEngine/build/_deps/protobuf-build/third_party/utf8_range/libutf8_validity.a
  /home/fr4nsyz/vault/L_CACHES/InferenceEngine/build/lib/libgtest.a
  /home/fr4nsyz/vault/L_CACHES/InferenceEngine/build/lib/libgtest_main.a
  /home/fr4nsyz/vault/L_CACHES/InferenceEngine/build/libinference_engine.a
@@ -397,11 +481,13 @@ tests/test_linear
  /usr/lib64/crtn.o
  /usr/lib64/libc.so
  /usr/lib64/libm.so
+ /usr/lib64/librt.a
  /usr/lib/gcc/x86_64-redhat-linux/15/crtbegin.o
  /usr/lib/gcc/x86_64-redhat-linux/15/crtend.o
  /usr/lib/gcc/x86_64-redhat-linux/15/libgcc.a
  /usr/lib/gcc/x86_64-redhat-linux/15/libgcc_s.so
  /usr/lib/gcc/x86_64-redhat-linux/15/libstdc++.so
  /usr/lib64/libc_nonshared.a
+ /usr/lib64/libz.so
  /home/fr4nsyz/vault/L_CACHES/InferenceEngine/build/tests/CMakeFiles/test_linear.dir/test_linear.cc.o
 

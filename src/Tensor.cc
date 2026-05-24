@@ -16,6 +16,21 @@ Tensor::Tensor(std::vector<int> shape) : _shape(std::move(shape)) {
   _data.resize(size(), 0.0f);
 }
 
+Tensor::Tensor(std::vector<int> shape, std::vector<float> data) : _shape(std::move(shape)), _data(std::move(data)) {
+  if (_shape.empty()) {
+    throw std::invalid_argument("Tensor must have at least 1 dimension");
+  }
+  for (int d : _shape) {
+    if (d <= 0) {
+      throw std::invalid_argument("Tensor dimensions must be positive");
+    }
+  }
+  compute_strides();
+  if (static_cast<int>(_data.size()) != size()) {
+    throw std::invalid_argument("Data size does not match shape");
+  }
+}
+
 void Tensor::compute_strides() {
   int n = ndim();
   _strides.resize(n);
@@ -155,6 +170,18 @@ Tensor Tensor::operator*(const Tensor& other) const {
   }
 
   return result;
+}
+
+Tensor Tensor::operator*(float scalar) const {
+    Tensor result(_shape);
+    for (int i = 0; i < size(); ++i) {
+        result._data[i] = _data[i] * scalar;
+    }
+    return result;
+}
+
+Tensor operator*(float scalar, const Tensor& t) {
+    return t * scalar;
 }
 
 Tensor Tensor::reshape(std::vector<int> new_shape) const {

@@ -4,4 +4,6 @@
 # 
 # This file includes the relevant testing commands required for 
 # testing this directory and lists subdirectories to be tested as well.
+subdirs("_deps/abseil-cpp-build")
+subdirs("_deps/protobuf-build")
 subdirs("tests")

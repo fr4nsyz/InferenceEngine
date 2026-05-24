@@ -69,27 +69,48 @@ include CMakeFiles/inference_engine.dir/progress.make
 # Include the compile flags for this target's objects.
 include CMakeFiles/inference_engine.dir/flags.make
 
+onnx.pb.h: onnx/onnx.proto
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold --progress-dir=/home/fr4nsyz/vault/L_CACHES/InferenceEngine/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Running cpp protocol buffer compiler on /home/fr4nsyz/vault/L_CACHES/InferenceEngine/build/onnx/onnx.proto"
+	_deps/protobuf-build/protoc --cpp_out :/home/fr4nsyz/vault/L_CACHES/InferenceEngine/build -I /home/fr4nsyz/vault/L_CACHES/InferenceEngine/build/onnx /home/fr4nsyz/vault/L_CACHES/InferenceEngine/build/onnx/onnx.proto
+
+onnx.pb.cc: onnx.pb.h
+	@$(CMAKE_COMMAND) -E touch_nocreate onnx.pb.cc
+
 CMakeFiles/inference_engine.dir/codegen:
 .PHONY : CMakeFiles/inference_engine.dir/codegen
 
-CMakeFiles/inference_engine.dir/src/Matrix.cc.o: CMakeFiles/inference_engine.dir/flags.make
-CMakeFiles/inference_engine.dir/src/Matrix.cc.o: /home/fr4nsyz/vault/L_CACHES/InferenceEngine/src/Matrix.cc
-CMakeFiles/inference_engine.dir/src/Matrix.cc.o: CMakeFiles/inference_engine.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/fr4nsyz/vault/L_CACHES/InferenceEngine/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/inference_engine.dir/src/Matrix.cc.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/inference_engine.dir/src/Matrix.cc.o -MF CMakeFiles/inference_engine.dir/src/Matrix.cc.o.d -o CMakeFiles/inference_engine.dir/src/Matrix.cc.o -c /home/fr4nsyz/vault/L_CACHES/InferenceEngine/src/Matrix.cc
+CMakeFiles/inference_engine.dir/src/Tensor.cc.o: CMakeFiles/inference_engine.dir/flags.make
+CMakeFiles/inference_engine.dir/src/Tensor.cc.o: /home/fr4nsyz/vault/L_CACHES/InferenceEngine/src/Tensor.cc
+CMakeFiles/inference_engine.dir/src/Tensor.cc.o: CMakeFiles/inference_engine.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/fr4nsyz/vault/L_CACHES/InferenceEngine/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/inference_engine.dir/src/Tensor.cc.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/inference_engine.dir/src/Tensor.cc.o -MF CMakeFiles/inference_engine.dir/src/Tensor.cc.o.d -o CMakeFiles/inference_engine.dir/src/Tensor.cc.o -c /home/fr4nsyz/vault/L_CACHES/InferenceEngine/src/Tensor.cc
 
-CMakeFiles/inference_engine.dir/src/Matrix.cc.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/inference_engine.dir/src/Matrix.cc.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/fr4nsyz/vault/L_CACHES/InferenceEngine/src/Matrix.cc > CMakeFiles/inference_engine.dir/src/Matrix.cc.i
+CMakeFiles/inference_engine.dir/src/Tensor.cc.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/inference_engine.dir/src/Tensor.cc.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/fr4nsyz/vault/L_CACHES/InferenceEngine/src/Tensor.cc > CMakeFiles/inference_engine.dir/src/Tensor.cc.i
 
-CMakeFiles/inference_engine.dir/src/Matrix.cc.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/inference_engine.dir/src/Matrix.cc.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/fr4nsyz/vault/L_CACHES/InferenceEngine/src/Matrix.cc -o CMakeFiles/inference_engine.dir/src/Matrix.cc.s
+CMakeFiles/inference_engine.dir/src/Tensor.cc.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/inference_engine.dir/src/Tensor.cc.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/fr4nsyz/vault/L_CACHES/InferenceEngine/src/Tensor.cc -o CMakeFiles/inference_engine.dir/src/Tensor.cc.s
+
+CMakeFiles/inference_engine.dir/src/Ops.cc.o: CMakeFiles/inference_engine.dir/flags.make
+CMakeFiles/inference_engine.dir/src/Ops.cc.o: /home/fr4nsyz/vault/L_CACHES/InferenceEngine/src/Ops.cc
+CMakeFiles/inference_engine.dir/src/Ops.cc.o: CMakeFiles/inference_engine.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/fr4nsyz/vault/L_CACHES/InferenceEngine/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/inference_engine.dir/src/Ops.cc.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/inference_engine.dir/src/Ops.cc.o -MF CMakeFiles/inference_engine.dir/src/Ops.cc.o.d -o CMakeFiles/inference_engine.dir/src/Ops.cc.o -c /home/fr4nsyz/vault/L_CACHES/InferenceEngine/src/Ops.cc
+
+CMakeFiles/inference_engine.dir/src/Ops.cc.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/inference_engine.dir/src/Ops.cc.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/fr4nsyz/vault/L_CACHES/InferenceEngine/src/Ops.cc > CMakeFiles/inference_engine.dir/src/Ops.cc.i
+
+CMakeFiles/inference_engine.dir/src/Ops.cc.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/inference_engine.dir/src/Ops.cc.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/fr4nsyz/vault/L_CACHES/InferenceEngine/src/Ops.cc -o CMakeFiles/inference_engine.dir/src/Ops.cc.s
 
 CMakeFiles/inference_engine.dir/src/Linear.cc.o: CMakeFiles/inference_engine.dir/flags.make
 CMakeFiles/inference_engine.dir/src/Linear.cc.o: /home/fr4nsyz/vault/L_CACHES/InferenceEngine/src/Linear.cc
 CMakeFiles/inference_engine.dir/src/Linear.cc.o: CMakeFiles/inference_engine.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/fr4nsyz/vault/L_CACHES/InferenceEngine/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/inference_engine.dir/src/Linear.cc.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/fr4nsyz/vault/L_CACHES/InferenceEngine/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/inference_engine.dir/src/Linear.cc.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/inference_engine.dir/src/Linear.cc.o -MF CMakeFiles/inference_engine.dir/src/Linear.cc.o.d -o CMakeFiles/inference_engine.dir/src/Linear.cc.o -c /home/fr4nsyz/vault/L_CACHES/InferenceEngine/src/Linear.cc
 
 CMakeFiles/inference_engine.dir/src/Linear.cc.i: cmake_force
@@ -103,7 +124,7 @@ CMakeFiles/inference_engine.dir/src/Linear.cc.s: cmake_force
 CMakeFiles/inference_engine.dir/src/Softmax.cc.o: CMakeFiles/inference_engine.dir/flags.make
 CMakeFiles/inference_engine.dir/src/Softmax.cc.o: /home/fr4nsyz/vault/L_CACHES/InferenceEngine/src/Softmax.cc
 CMakeFiles/inference_engine.dir/src/Softmax.cc.o: CMakeFiles/inference_engine.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/fr4nsyz/vault/L_CACHES/InferenceEngine/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/inference_engine.dir/src/Softmax.cc.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/fr4nsyz/vault/L_CACHES/InferenceEngine/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/inference_engine.dir/src/Softmax.cc.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/inference_engine.dir/src/Softmax.cc.o -MF CMakeFiles/inference_engine.dir/src/Softmax.cc.o.d -o CMakeFiles/inference_engine.dir/src/Softmax.cc.o -c /home/fr4nsyz/vault/L_CACHES/InferenceEngine/src/Softmax.cc
 
 CMakeFiles/inference_engine.dir/src/Softmax.cc.i: cmake_force
@@ -117,7 +138,7 @@ CMakeFiles/inference_engine.dir/src/Softmax.cc.s: cmake_force
 CMakeFiles/inference_engine.dir/src/ReLU.cc.o: CMakeFiles/inference_engine.dir/flags.make
 CMakeFiles/inference_engine.dir/src/ReLU.cc.o: /home/fr4nsyz/vault/L_CACHES/InferenceEngine/src/ReLU.cc
 CMakeFiles/inference_engine.dir/src/ReLU.cc.o: CMakeFiles/inference_engine.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/fr4nsyz/vault/L_CACHES/InferenceEngine/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/inference_engine.dir/src/ReLU.cc.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/fr4nsyz/vault/L_CACHES/InferenceEngine/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/inference_engine.dir/src/ReLU.cc.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/inference_engine.dir/src/ReLU.cc.o -MF CMakeFiles/inference_engine.dir/src/ReLU.cc.o.d -o CMakeFiles/inference_engine.dir/src/ReLU.cc.o -c /home/fr4nsyz/vault/L_CACHES/InferenceEngine/src/ReLU.cc
 
 CMakeFiles/inference_engine.dir/src/ReLU.cc.i: cmake_force
@@ -128,23 +149,89 @@ CMakeFiles/inference_engine.dir/src/ReLU.cc.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/inference_engine.dir/src/ReLU.cc.s"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/fr4nsyz/vault/L_CACHES/InferenceEngine/src/ReLU.cc -o CMakeFiles/inference_engine.dir/src/ReLU.cc.s
 
+CMakeFiles/inference_engine.dir/src/Add.cc.o: CMakeFiles/inference_engine.dir/flags.make
+CMakeFiles/inference_engine.dir/src/Add.cc.o: /home/fr4nsyz/vault/L_CACHES/InferenceEngine/src/Add.cc
+CMakeFiles/inference_engine.dir/src/Add.cc.o: CMakeFiles/inference_engine.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/fr4nsyz/vault/L_CACHES/InferenceEngine/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/inference_engine.dir/src/Add.cc.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/inference_engine.dir/src/Add.cc.o -MF CMakeFiles/inference_engine.dir/src/Add.cc.o.d -o CMakeFiles/inference_engine.dir/src/Add.cc.o -c /home/fr4nsyz/vault/L_CACHES/InferenceEngine/src/Add.cc
+
+CMakeFiles/inference_engine.dir/src/Add.cc.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/inference_engine.dir/src/Add.cc.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/fr4nsyz/vault/L_CACHES/InferenceEngine/src/Add.cc > CMakeFiles/inference_engine.dir/src/Add.cc.i
+
+CMakeFiles/inference_engine.dir/src/Add.cc.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/inference_engine.dir/src/Add.cc.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/fr4nsyz/vault/L_CACHES/InferenceEngine/src/Add.cc -o CMakeFiles/inference_engine.dir/src/Add.cc.s
+
+CMakeFiles/inference_engine.dir/src/ONNXLoader.cc.o: CMakeFiles/inference_engine.dir/flags.make
+CMakeFiles/inference_engine.dir/src/ONNXLoader.cc.o: /home/fr4nsyz/vault/L_CACHES/InferenceEngine/src/ONNXLoader.cc
+CMakeFiles/inference_engine.dir/src/ONNXLoader.cc.o: CMakeFiles/inference_engine.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/fr4nsyz/vault/L_CACHES/InferenceEngine/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/inference_engine.dir/src/ONNXLoader.cc.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/inference_engine.dir/src/ONNXLoader.cc.o -MF CMakeFiles/inference_engine.dir/src/ONNXLoader.cc.o.d -o CMakeFiles/inference_engine.dir/src/ONNXLoader.cc.o -c /home/fr4nsyz/vault/L_CACHES/InferenceEngine/src/ONNXLoader.cc
+
+CMakeFiles/inference_engine.dir/src/ONNXLoader.cc.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/inference_engine.dir/src/ONNXLoader.cc.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/fr4nsyz/vault/L_CACHES/InferenceEngine/src/ONNXLoader.cc > CMakeFiles/inference_engine.dir/src/ONNXLoader.cc.i
+
+CMakeFiles/inference_engine.dir/src/ONNXLoader.cc.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/inference_engine.dir/src/ONNXLoader.cc.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/fr4nsyz/vault/L_CACHES/InferenceEngine/src/ONNXLoader.cc -o CMakeFiles/inference_engine.dir/src/ONNXLoader.cc.s
+
+CMakeFiles/inference_engine.dir/src/Model.cc.o: CMakeFiles/inference_engine.dir/flags.make
+CMakeFiles/inference_engine.dir/src/Model.cc.o: /home/fr4nsyz/vault/L_CACHES/InferenceEngine/src/Model.cc
+CMakeFiles/inference_engine.dir/src/Model.cc.o: CMakeFiles/inference_engine.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/fr4nsyz/vault/L_CACHES/InferenceEngine/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object CMakeFiles/inference_engine.dir/src/Model.cc.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/inference_engine.dir/src/Model.cc.o -MF CMakeFiles/inference_engine.dir/src/Model.cc.o.d -o CMakeFiles/inference_engine.dir/src/Model.cc.o -c /home/fr4nsyz/vault/L_CACHES/InferenceEngine/src/Model.cc
+
+CMakeFiles/inference_engine.dir/src/Model.cc.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/inference_engine.dir/src/Model.cc.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/fr4nsyz/vault/L_CACHES/InferenceEngine/src/Model.cc > CMakeFiles/inference_engine.dir/src/Model.cc.i
+
+CMakeFiles/inference_engine.dir/src/Model.cc.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/inference_engine.dir/src/Model.cc.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/fr4nsyz/vault/L_CACHES/InferenceEngine/src/Model.cc -o CMakeFiles/inference_engine.dir/src/Model.cc.s
+
+CMakeFiles/inference_engine.dir/onnx.pb.cc.o: CMakeFiles/inference_engine.dir/flags.make
+CMakeFiles/inference_engine.dir/onnx.pb.cc.o: onnx.pb.cc
+CMakeFiles/inference_engine.dir/onnx.pb.cc.o: CMakeFiles/inference_engine.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/fr4nsyz/vault/L_CACHES/InferenceEngine/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building CXX object CMakeFiles/inference_engine.dir/onnx.pb.cc.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/inference_engine.dir/onnx.pb.cc.o -MF CMakeFiles/inference_engine.dir/onnx.pb.cc.o.d -o CMakeFiles/inference_engine.dir/onnx.pb.cc.o -c /home/fr4nsyz/vault/L_CACHES/InferenceEngine/build/onnx.pb.cc
+
+CMakeFiles/inference_engine.dir/onnx.pb.cc.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/inference_engine.dir/onnx.pb.cc.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/fr4nsyz/vault/L_CACHES/InferenceEngine/build/onnx.pb.cc > CMakeFiles/inference_engine.dir/onnx.pb.cc.i
+
+CMakeFiles/inference_engine.dir/onnx.pb.cc.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/inference_engine.dir/onnx.pb.cc.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/fr4nsyz/vault/L_CACHES/InferenceEngine/build/onnx.pb.cc -o CMakeFiles/inference_engine.dir/onnx.pb.cc.s
+
 # Object files for target inference_engine
 inference_engine_OBJECTS = \
-"CMakeFiles/inference_engine.dir/src/Matrix.cc.o" \
+"CMakeFiles/inference_engine.dir/src/Tensor.cc.o" \
+"CMakeFiles/inference_engine.dir/src/Ops.cc.o" \
 "CMakeFiles/inference_engine.dir/src/Linear.cc.o" \
 "CMakeFiles/inference_engine.dir/src/Softmax.cc.o" \
-"CMakeFiles/inference_engine.dir/src/ReLU.cc.o"
+"CMakeFiles/inference_engine.dir/src/ReLU.cc.o" \
+"CMakeFiles/inference_engine.dir/src/Add.cc.o" \
+"CMakeFiles/inference_engine.dir/src/ONNXLoader.cc.o" \
+"CMakeFiles/inference_engine.dir/src/Model.cc.o" \
+"CMakeFiles/inference_engine.dir/onnx.pb.cc.o"
 
 # External object files for target inference_engine
 inference_engine_EXTERNAL_OBJECTS =
 
-libinference_engine.a: CMakeFiles/inference_engine.dir/src/Matrix.cc.o
+libinference_engine.a: CMakeFiles/inference_engine.dir/src/Tensor.cc.o
+libinference_engine.a: CMakeFiles/inference_engine.dir/src/Ops.cc.o
 libinference_engine.a: CMakeFiles/inference_engine.dir/src/Linear.cc.o
 libinference_engine.a: CMakeFiles/inference_engine.dir/src/Softmax.cc.o
 libinference_engine.a: CMakeFiles/inference_engine.dir/src/ReLU.cc.o
+libinference_engine.a: CMakeFiles/inference_engine.dir/src/Add.cc.o
+libinference_engine.a: CMakeFiles/inference_engine.dir/src/ONNXLoader.cc.o
+libinference_engine.a: CMakeFiles/inference_engine.dir/src/Model.cc.o
+libinference_engine.a: CMakeFiles/inference_engine.dir/onnx.pb.cc.o
 libinference_engine.a: CMakeFiles/inference_engine.dir/build.make
 libinference_engine.a: CMakeFiles/inference_engine.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/home/fr4nsyz/vault/L_CACHES/InferenceEngine/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Linking CXX static library libinference_engine.a"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/home/fr4nsyz/vault/L_CACHES/InferenceEngine/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Linking CXX static library libinference_engine.a"
 	$(CMAKE_COMMAND) -P CMakeFiles/inference_engine.dir/cmake_clean_target.cmake
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/inference_engine.dir/link.txt --verbose=$(VERBOSE)
 
@@ -156,7 +243,8 @@ CMakeFiles/inference_engine.dir/clean:
 	$(CMAKE_COMMAND) -P CMakeFiles/inference_engine.dir/cmake_clean.cmake
 .PHONY : CMakeFiles/inference_engine.dir/clean
 
-CMakeFiles/inference_engine.dir/depend:
+CMakeFiles/inference_engine.dir/depend: onnx.pb.cc
+CMakeFiles/inference_engine.dir/depend: onnx.pb.h
 	cd /home/fr4nsyz/vault/L_CACHES/InferenceEngine/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/fr4nsyz/vault/L_CACHES/InferenceEngine /home/fr4nsyz/vault/L_CACHES/InferenceEngine /home/fr4nsyz/vault/L_CACHES/InferenceEngine/build /home/fr4nsyz/vault/L_CACHES/InferenceEngine/build /home/fr4nsyz/vault/L_CACHES/InferenceEngine/build/CMakeFiles/inference_engine.dir/DependInfo.cmake "--color=$(COLOR)"
 .PHONY : CMakeFiles/inference_engine.dir/depend
 

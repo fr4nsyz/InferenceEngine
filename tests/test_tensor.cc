@@ -38,7 +38,7 @@ TEST(TensorTest, Construction3D) {
 }
 
 TEST(TensorTest, ConstructionEmptyShape) {
-  EXPECT_THROW(Tensor({}), std::invalid_argument);
+  EXPECT_THROW(Tensor(std::vector<int>{}), std::invalid_argument);
 }
 
 TEST(TensorTest, ConstructionInvalidDimension) {

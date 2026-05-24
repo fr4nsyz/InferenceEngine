@@ -1,5 +1,7 @@
-test_matrix 3 0.00135268
-test_linear 3 0.00169111
-test_softmax 1 0.00565316
-test_relu 1 0.00476353
+test_tensor 6 0.0010874
+test_linear 6 0.00117961
+test_softmax 6 0.00109502
+test_relu 6 0.000994929
+test_add 6 0.00109272
+test_onnx_loader 4 0.00132787
 ---

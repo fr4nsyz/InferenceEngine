@@ -4,7 +4,7 @@
 # compile CXX with /usr/bin/c++
 CXX_DEFINES = 
 
-CXX_INCLUDES = -I/home/fr4nsyz/vault/L_CACHES/InferenceEngine/include -isystem /home/fr4nsyz/vault/L_CACHES/InferenceEngine/build/_deps/googletest-src/googletest/include -isystem /home/fr4nsyz/vault/L_CACHES/InferenceEngine/build/_deps/googletest-src/googletest
+CXX_INCLUDES = -I/home/fr4nsyz/vault/L_CACHES/InferenceEngine/include -I/home/fr4nsyz/vault/L_CACHES/InferenceEngine/build -I/home/fr4nsyz/vault/L_CACHES/InferenceEngine/build/_deps/protobuf-src/src -I/home/fr4nsyz/vault/L_CACHES/InferenceEngine/build/_deps/abseil-cpp-src -isystem /home/fr4nsyz/vault/L_CACHES/InferenceEngine/build/_deps/googletest-src/googletest/include -isystem /home/fr4nsyz/vault/L_CACHES/InferenceEngine/build/_deps/googletest-src/googletest
 
-CXX_FLAGS = -std=gnu++20
+CXX_FLAGS = -O3 -DNDEBUG -std=gnu++20
 

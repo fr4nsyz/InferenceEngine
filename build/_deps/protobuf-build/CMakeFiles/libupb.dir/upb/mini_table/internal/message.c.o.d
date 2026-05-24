@@ -1,0 +1,34 @@
+_deps/protobuf-build/CMakeFiles/libupb.dir/upb/mini_table/internal/message.c.o: \
+ /home/fr4nsyz/vault/L_CACHES/InferenceEngine/build/_deps/protobuf-src/upb/mini_table/internal/message.c \
+ /usr/include/stdc-predef.h \
+ /home/fr4nsyz/vault/L_CACHES/InferenceEngine/build/_deps/protobuf-src/upb/mini_table/internal/message.h \
+ /usr/lib/gcc/x86_64-redhat-linux/15/include/stddef.h \
+ /usr/lib/gcc/x86_64-redhat-linux/15/include/stdint.h \
+ /usr/include/stdint.h /usr/include/bits/libc-header-start.h \
+ /usr/include/features.h /usr/include/features-time64.h \
+ /usr/include/bits/wordsize.h /usr/include/bits/timesize.h \
+ /usr/include/sys/cdefs.h /usr/include/bits/long-double.h \
+ /usr/include/gnu/stubs.h /usr/include/gnu/stubs-64.h \
+ /usr/include/bits/types.h /usr/include/bits/typesizes.h \
+ /usr/include/bits/time64.h /usr/include/bits/wchar.h \
+ /usr/include/bits/stdint-intn.h /usr/include/bits/stdint-uintn.h \
+ /usr/include/bits/stdint-least.h \
+ /home/fr4nsyz/vault/L_CACHES/InferenceEngine/build/_deps/protobuf-src/upb/base/descriptor_constants.h \
+ /home/fr4nsyz/vault/L_CACHES/InferenceEngine/build/_deps/protobuf-src/upb/port/def.inc \
+ /usr/include/assert.h /usr/include/setjmp.h /usr/include/bits/setjmp.h \
+ /usr/include/bits/types/struct___jmp_buf_tag.h \
+ /usr/include/bits/types/__sigset_t.h \
+ /usr/lib/gcc/x86_64-redhat-linux/15/include/stdbool.h \
+ /usr/include/stdio.h \
+ /usr/lib/gcc/x86_64-redhat-linux/15/include/stdarg.h \
+ /usr/include/bits/types/__fpos_t.h /usr/include/bits/types/__mbstate_t.h \
+ /usr/include/bits/types/__fpos64_t.h /usr/include/bits/types/__FILE.h \
+ /usr/include/bits/types/FILE.h /usr/include/bits/types/struct_FILE.h \
+ /usr/include/bits/types/cookie_io_functions_t.h \
+ /usr/include/bits/stdio_lim.h /usr/include/bits/floatn.h \
+ /usr/include/bits/floatn-common.h /usr/include/bits/stdio.h \
+ /home/fr4nsyz/vault/L_CACHES/InferenceEngine/build/_deps/protobuf-src/upb/port/undef.inc \
+ /home/fr4nsyz/vault/L_CACHES/InferenceEngine/build/_deps/protobuf-src/upb/mini_table/internal/field.h \
+ /home/fr4nsyz/vault/L_CACHES/InferenceEngine/build/_deps/protobuf-src/upb/mini_table/internal/size_log2.h \
+ /home/fr4nsyz/vault/L_CACHES/InferenceEngine/build/_deps/protobuf-src/upb/mini_table/internal/sub.h \
+ /home/fr4nsyz/vault/L_CACHES/InferenceEngine/build/_deps/protobuf-src/upb/message/internal/types.h

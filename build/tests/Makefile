@@ -172,18 +172,18 @@ depend:
 .PHONY : depend
 
 # Convenience name for target.
-tests/CMakeFiles/test_matrix.dir/rule:
-	cd /home/fr4nsyz/vault/L_CACHES/InferenceEngine/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 tests/CMakeFiles/test_matrix.dir/rule
-.PHONY : tests/CMakeFiles/test_matrix.dir/rule
+tests/CMakeFiles/test_tensor.dir/rule:
+	cd /home/fr4nsyz/vault/L_CACHES/InferenceEngine/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 tests/CMakeFiles/test_tensor.dir/rule
+.PHONY : tests/CMakeFiles/test_tensor.dir/rule
 
 # Convenience name for target.
-test_matrix: tests/CMakeFiles/test_matrix.dir/rule
-.PHONY : test_matrix
+test_tensor: tests/CMakeFiles/test_tensor.dir/rule
+.PHONY : test_tensor
 
 # fast build rule for target.
-test_matrix/fast:
-	cd /home/fr4nsyz/vault/L_CACHES/InferenceEngine/build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/test_matrix.dir/build.make tests/CMakeFiles/test_matrix.dir/build
-.PHONY : test_matrix/fast
+test_tensor/fast:
+	cd /home/fr4nsyz/vault/L_CACHES/InferenceEngine/build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/test_tensor.dir/build.make tests/CMakeFiles/test_tensor.dir/build
+.PHONY : test_tensor/fast
 
 # Convenience name for target.
 tests/CMakeFiles/test_linear.dir/rule:
@@ -227,6 +227,58 @@ test_relu/fast:
 	cd /home/fr4nsyz/vault/L_CACHES/InferenceEngine/build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/test_relu.dir/build.make tests/CMakeFiles/test_relu.dir/build
 .PHONY : test_relu/fast
 
+# Convenience name for target.
+tests/CMakeFiles/test_add.dir/rule:
+	cd /home/fr4nsyz/vault/L_CACHES/InferenceEngine/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 tests/CMakeFiles/test_add.dir/rule
+.PHONY : tests/CMakeFiles/test_add.dir/rule
+
+# Convenience name for target.
+test_add: tests/CMakeFiles/test_add.dir/rule
+.PHONY : test_add
+
+# fast build rule for target.
+test_add/fast:
+	cd /home/fr4nsyz/vault/L_CACHES/InferenceEngine/build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/test_add.dir/build.make tests/CMakeFiles/test_add.dir/build
+.PHONY : test_add/fast
+
+# Convenience name for target.
+tests/CMakeFiles/test_onnx_loader.dir/rule:
+	cd /home/fr4nsyz/vault/L_CACHES/InferenceEngine/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 tests/CMakeFiles/test_onnx_loader.dir/rule
+.PHONY : tests/CMakeFiles/test_onnx_loader.dir/rule
+
+# Convenience name for target.
+test_onnx_loader: tests/CMakeFiles/test_onnx_loader.dir/rule
+.PHONY : test_onnx_loader
+
+# fast build rule for target.
+test_onnx_loader/fast:
+	cd /home/fr4nsyz/vault/L_CACHES/InferenceEngine/build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/test_onnx_loader.dir/build.make tests/CMakeFiles/test_onnx_loader.dir/build
+.PHONY : test_onnx_loader/fast
+
+test_add.o: test_add.cc.o
+.PHONY : test_add.o
+
+# target to build an object file
+test_add.cc.o:
+	cd /home/fr4nsyz/vault/L_CACHES/InferenceEngine/build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/test_add.dir/build.make tests/CMakeFiles/test_add.dir/test_add.cc.o
+.PHONY : test_add.cc.o
+
+test_add.i: test_add.cc.i
+.PHONY : test_add.i
+
+# target to preprocess a source file
+test_add.cc.i:
+	cd /home/fr4nsyz/vault/L_CACHES/InferenceEngine/build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/test_add.dir/build.make tests/CMakeFiles/test_add.dir/test_add.cc.i
+.PHONY : test_add.cc.i
+
+test_add.s: test_add.cc.s
+.PHONY : test_add.s
+
+# target to generate assembly for a file
+test_add.cc.s:
+	cd /home/fr4nsyz/vault/L_CACHES/InferenceEngine/build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/test_add.dir/build.make tests/CMakeFiles/test_add.dir/test_add.cc.s
+.PHONY : test_add.cc.s
+
 test_linear.o: test_linear.cc.o
 .PHONY : test_linear.o
 
@@ -251,29 +303,29 @@ test_linear.cc.s:
 	cd /home/fr4nsyz/vault/L_CACHES/InferenceEngine/build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/test_linear.dir/build.make tests/CMakeFiles/test_linear.dir/test_linear.cc.s
 .PHONY : test_linear.cc.s
 
-test_matrix.o: test_matrix.cc.o
-.PHONY : test_matrix.o
+test_onnx_loader.o: test_onnx_loader.cc.o
+.PHONY : test_onnx_loader.o
 
 # target to build an object file
-test_matrix.cc.o:
-	cd /home/fr4nsyz/vault/L_CACHES/InferenceEngine/build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/test_matrix.dir/build.make tests/CMakeFiles/test_matrix.dir/test_matrix.cc.o
-.PHONY : test_matrix.cc.o
+test_onnx_loader.cc.o:
+	cd /home/fr4nsyz/vault/L_CACHES/InferenceEngine/build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/test_onnx_loader.dir/build.make tests/CMakeFiles/test_onnx_loader.dir/test_onnx_loader.cc.o
+.PHONY : test_onnx_loader.cc.o
 
-test_matrix.i: test_matrix.cc.i
-.PHONY : test_matrix.i
+test_onnx_loader.i: test_onnx_loader.cc.i
+.PHONY : test_onnx_loader.i
 
 # target to preprocess a source file
-test_matrix.cc.i:
-	cd /home/fr4nsyz/vault/L_CACHES/InferenceEngine/build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/test_matrix.dir/build.make tests/CMakeFiles/test_matrix.dir/test_matrix.cc.i
-.PHONY : test_matrix.cc.i
+test_onnx_loader.cc.i:
+	cd /home/fr4nsyz/vault/L_CACHES/InferenceEngine/build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/test_onnx_loader.dir/build.make tests/CMakeFiles/test_onnx_loader.dir/test_onnx_loader.cc.i
+.PHONY : test_onnx_loader.cc.i
 
-test_matrix.s: test_matrix.cc.s
-.PHONY : test_matrix.s
+test_onnx_loader.s: test_onnx_loader.cc.s
+.PHONY : test_onnx_loader.s
 
 # target to generate assembly for a file
-test_matrix.cc.s:
-	cd /home/fr4nsyz/vault/L_CACHES/InferenceEngine/build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/test_matrix.dir/build.make tests/CMakeFiles/test_matrix.dir/test_matrix.cc.s
-.PHONY : test_matrix.cc.s
+test_onnx_loader.cc.s:
+	cd /home/fr4nsyz/vault/L_CACHES/InferenceEngine/build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/test_onnx_loader.dir/build.make tests/CMakeFiles/test_onnx_loader.dir/test_onnx_loader.cc.s
+.PHONY : test_onnx_loader.cc.s
 
 test_relu.o: test_relu.cc.o
 .PHONY : test_relu.o
@@ -323,6 +375,30 @@ test_softmax.cc.s:
 	cd /home/fr4nsyz/vault/L_CACHES/InferenceEngine/build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/test_softmax.dir/build.make tests/CMakeFiles/test_softmax.dir/test_softmax.cc.s
 .PHONY : test_softmax.cc.s
 
+test_tensor.o: test_tensor.cc.o
+.PHONY : test_tensor.o
+
+# target to build an object file
+test_tensor.cc.o:
+	cd /home/fr4nsyz/vault/L_CACHES/InferenceEngine/build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/test_tensor.dir/build.make tests/CMakeFiles/test_tensor.dir/test_tensor.cc.o
+.PHONY : test_tensor.cc.o
+
+test_tensor.i: test_tensor.cc.i
+.PHONY : test_tensor.i
+
+# target to preprocess a source file
+test_tensor.cc.i:
+	cd /home/fr4nsyz/vault/L_CACHES/InferenceEngine/build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/test_tensor.dir/build.make tests/CMakeFiles/test_tensor.dir/test_tensor.cc.i
+.PHONY : test_tensor.cc.i
+
+test_tensor.s: test_tensor.cc.s
+.PHONY : test_tensor.s
+
+# target to generate assembly for a file
+test_tensor.cc.s:
+	cd /home/fr4nsyz/vault/L_CACHES/InferenceEngine/build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/test_tensor.dir/build.make tests/CMakeFiles/test_tensor.dir/test_tensor.cc.s
+.PHONY : test_tensor.cc.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -336,22 +412,30 @@ help:
 	@echo "... list_install_components"
 	@echo "... rebuild_cache"
 	@echo "... test"
+	@echo "... test_add"
 	@echo "... test_linear"
-	@echo "... test_matrix"
+	@echo "... test_onnx_loader"
 	@echo "... test_relu"
 	@echo "... test_softmax"
+	@echo "... test_tensor"
+	@echo "... test_add.o"
+	@echo "... test_add.i"
+	@echo "... test_add.s"
 	@echo "... test_linear.o"
 	@echo "... test_linear.i"
 	@echo "... test_linear.s"
-	@echo "... test_matrix.o"
-	@echo "... test_matrix.i"
-	@echo "... test_matrix.s"
+	@echo "... test_onnx_loader.o"
+	@echo "... test_onnx_loader.i"
+	@echo "... test_onnx_loader.s"
 	@echo "... test_relu.o"
 	@echo "... test_relu.i"
 	@echo "... test_relu.s"
 	@echo "... test_softmax.o"
 	@echo "... test_softmax.i"
 	@echo "... test_softmax.s"
+	@echo "... test_tensor.o"
+	@echo "... test_tensor.i"
+	@echo "... test_tensor.s"
 .PHONY : help
 
 
