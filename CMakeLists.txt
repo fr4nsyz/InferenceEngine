@@ -58,6 +58,11 @@ target_link_libraries(inference_engine PUBLIC protobuf::libprotobuf)
 
 option(BUILD_TESTS "Build tests" ON)
 if(BUILD_TESTS)
-    enable_testing()
-    add_subdirectory(tests)
+  enable_testing()
+  add_subdirectory(tests)
+endif()
+
+option(BUILD_BENCHMARKS "Build benchmarks" ON)
+if(BUILD_BENCHMARKS)
+  add_subdirectory(benchmarks)
 endif()
